@@ -1,4 +1,4 @@
-output "server_public_ip" {
+output "server_public_id" {
   description = "Public IP address of the server"
-  value       = aws_instance.first_ec2_instance_server.public_ip
+  value       = aws_instance.my_ec2_instance[*].public_ip
 }

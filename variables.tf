@@ -1,15 +1,10 @@
 variable "project" {
-  description = "My first attempt on creating ec2 instance"
-  default     = "my_ec2_instance"
-}
-
-variable "environment" {
-  description = "Working environment (dev, prod, stage)"
-  default     = "dev"
+  description = "Name of the project"
+  default     = "My first EC2 instance"
 }
 
 variable "aws_region" {
-  description = "AWS region"
+  description = "AWS region where the instance runs"
 }
 
 variable "aws_access_id" {
@@ -20,7 +15,7 @@ variable "aws_secret_key" {
   description = "AWS secret key"
 }
 
-variable "server_instance_type" {
-  description = "Instance type"
-  default     = "t2.micro"
+variable "environment" {
+  description = "Working environment (dev, prod, stage)"
+  default     = "dev"
 }
