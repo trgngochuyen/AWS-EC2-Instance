@@ -4,3 +4,6 @@ terraform.tfstate*
 terraform.tfvars*
 .DS_Store
 *.key
+
+# Git
+.gitignore
